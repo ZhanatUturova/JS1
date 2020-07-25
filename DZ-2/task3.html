@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    'use strict';
+
+    let a = +prompt('Введите целое число a: ');
+    let b = +prompt('Введите целое число b: ');
+
+    if (a >= 0 && b >= 0) {
+        alert(a - b);
+    } else if (a < 0 && b < 0) {
+        alert(a * b);
+    } else if( (a >= 0 && b < 0) || (a < 0 && b >= 0) ) {
+        alert(a + b);
+    }
+
+
+</script>
+

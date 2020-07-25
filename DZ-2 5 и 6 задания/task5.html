@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    "use strict";
+    
+    let a = Number(prompt('Введите первое число'));
+    let b = Number(prompt('Введите второе число'));
+    let operation = prompt('Выберите: умножение, деление, сложение или вычитание');
+    
+    function multiplication(a, b) {
+        return alert(a * b);
+    }
+
+    function division(a, b) {
+        return alert(a / b);
+    }
+
+    function subtraction(a, b) {
+        return alert(a - b);
+    }
+
+    function addition(a, b) {
+        return alert(a + b);
+    }
+    
+    switch(operation) {
+        case 'умножение':
+        case '*':
+            multiplication(a, b);
+            break;
+        case 'деление':
+        case '/':
+            division(a, b);
+            break;
+        case 'сложение':
+        case '+':
+            addition(a, b);
+            break;
+        case 'вычитание':
+        case '-':
+            subtraction(a, b);
+            break;
+    }  
+
+</script>
+</body>
+</html>
